@@ -1,13 +1,20 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logoImg from './images/Untitled.png';
+import './styles/NavBar.css'
+
 
 
 function NavigationBar (){
     return (
-        <Navbar expand="lg" className="bg-dark border-bottom border-dark">
+        <Navbar expand="lg" className="darkBackground border-bottom border-dark">
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">
+                    <div className='imgDiv'>
+                     <img src={logoImg} alt='logo' className='img-fluid' />
+                    </div>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className='navbar-dark' />
                 <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
                     <Nav className= ''>
