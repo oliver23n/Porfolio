@@ -5,6 +5,7 @@ import profilePic from './images/pic.png'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './styles/About.css'
 function About (){
    return(
     
@@ -22,7 +23,7 @@ function About (){
                     src={profilePic}
                     />
                     <Figure.Caption>
-                   <h1 className='text-center'>Oliver Nasevski</h1>
+                   <h1 className='text-center text-white'>Oliver Nasevski</h1>
                     </Figure.Caption>
                     </Figure>
                 </Col>

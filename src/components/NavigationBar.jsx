@@ -7,7 +7,7 @@ import './styles/NavBar.css'
 
 function NavigationBar (){
     return (
-        <Navbar expand="lg" className="darkBackground border-bottom border-danger">
+        <Navbar expand="lg" className=" border-bottom border-danger">
             <Container>
                 <Navbar.Brand href="#">
                     <div className='imgDiv'>
