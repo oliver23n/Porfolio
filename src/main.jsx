@@ -1,7 +1,7 @@
 
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import {About, Projects, Contact} from './components'
+import {About, Projects, Contact,Resume} from './components'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
         path: '/Projects',
         element: <Projects />,
       },
+      {
+        path: '/Resume',
+        element: <Resume />,
+      }
     ],
   },
 ]);

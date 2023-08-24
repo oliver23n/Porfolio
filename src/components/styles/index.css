@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none !important;
 }
-.contact-container {
+.contact-container,.resume-container {
     margin-top: 50px;
 }
 .icons {
@@ -36,6 +36,7 @@ a:hover{
     overflow: hidden;
     position: relative;
     font-weight: bold;
+      transition: all 400ms ease
 
 }
 .cards img{
@@ -48,8 +49,37 @@ a:hover{
 .cards:hover img{
     opacity: 0.2;
 }
+.cards:hover{
+    width: 20rem;
+    height:240px !important;
+}
 
 .icons:hover{
     fill:red;
 }
+.active{
+background-color: #B60000 !important;
+border-radius: 20px;
+}
+.notactive{
+background-color: black !important;
+
+}
+.skill-icons {
+    width:50px;
+    height:100px;
+    object-fit: contain;
+    
+}
+.skill-icons img{
+    display: block;
+    object-fit: contain;
+}
+.skills h4{
+    margin-top:30px;
+    border-bottom: #B60000 solid;
+}
+.resume-container h3{
+    margin-top:20px;
+}   
 

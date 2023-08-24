@@ -1,7 +1,7 @@
-import { Container } from "react-bootstrap";
+import { Container,Card } from "react-bootstrap";
 import {projects} from "./data";
 import { FaGithub } from 'react-icons/fa';  
-import Card from 'react-bootstrap/Card';
+
 // import './styles/Projects.css';
 
 function Projects(){

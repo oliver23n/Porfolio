@@ -24,20 +24,21 @@ function NavigationBar (){
                 <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
                     <Nav className= ''>
 
-                        <Link to="/">
-                        <Nav.Link className='' href="#link">About</Nav.Link>
+                        <Link to="/" >
+                           
+                            <Nav.Link className={currentPage === '/' ? 'active' : 'notactive'} href="#link">About</Nav.Link>
                         </Link>
 
-                        <Link to="/Projects">
-                        <Nav.Link className='' href="#link">Projects</Nav.Link>
+                        <Link to="/Projects" >
+                            <Nav.Link className={currentPage === '/Projects' ? 'active' : 'notactive'} href="#link">Projects</Nav.Link>
                         </Link>
 
-                        <Link to="Contact">
-                        <Nav.Link className='' href="#link">Contact</Nav.Link>
+                        <Link to="Contact" >
+                            <Nav.Link className={currentPage === '/Contact' ? 'active' : 'notactive'} href="#link">Contact</Nav.Link>
                         </Link>
                         
                         <Link to="/Resume">
-                        <Nav.Link className='' href="#link">Resume</Nav.Link>
+                            <Nav.Link className={currentPage === '/Resume' ? 'active' : 'notactive'} href="#link">Resume</Nav.Link>
                         </Link>
                         
                     </Nav>
