@@ -3,83 +3,167 @@
     color: white !important;
     box-sizing: border-box;
     text-decoration: none !important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.contact-container,.resume-container {
-    margin-top: 50px;
+
+footer {
+    width: 100%;
+    min-height: 60px;
+    bottom: 0;
+    left: 0;
+    position: relative;
 }
+
+.content {
+    min-height: 100vh;
+}
+
 .icons {
     font-size: 3rem;
     transition: all 400ms ease;
 }
-.imgDiv {
+
+.logoImg {
     width: 50px;
     height: 40px;
     object-fit: contain;
 
 }
-#projects {
-    margin-top: 30px;
+
+h1 {
+    transition: all 500ms ease;
 }
 
-a{
-    transition:all 400ms ease;
+h1:hover {
+    color: red !important;
+    transition: all 500ms ease;
 }
-a:hover{
-    color:red !important;
+
+a {
+    transition: all 400ms ease;
 }
+
+a:hover {
+    color: red !important;
+}
+
 .cards {
     width: 18rem;
     margin: 20px;
     height: 220px !important;
-    border: 2px solid red !important ;
+    border: 2px solid red !important;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
     font-weight: bold;
-      transition: all 400ms ease
+    transition: all 1s ease;
 
 }
-.cards img{
+
+.cards img {
     display: block;
     width: 100%;
     object-fit: cover;
     height: 100%;
-    transition: all 400ms ease
+    position: absolute;
+}
+
+.cards:hover {
+    width: 20rem;
+    height: 240px !important;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+
 }
 .cards:hover img{
-    opacity: 0.2;
-}
-.cards:hover{
-    width: 20rem;
-    height:240px !important;
+    opacity: 0.5;
 }
 
-.icons:hover{
-    fill:red;
+.cards:hover .card-content {
+    opacity: 0.7;
+    position: absolute
 }
-.active{
-background-color: #B60000 !important;
-border-radius: 20px;
-}
-.notactive{
-background-color: black !important;
 
+.cardTitle {
+    font-size: 1.2rem;
 }
-.skill-icons {
-    width:50px;
-    height:100px;
-    object-fit: contain;
+.desc{
+    margin-top:20px;
+    height:100vh;
+    font-size:0.9rem;
+}
+
+.icons:hover {
+    fill: red;
+}
+
+.active {
+    background-color: #B60000 !important;
+    border-radius: 30px;
+}
+.notactive {
+    background-color: black !important;
     
 }
-.skill-icons img{
+.nav-item{
+    text-align: center;
+    line-height: 3rem;
+    width:100px;
+    height:3rem;
+    padding:0 0.5rem;
+    font-size: 1.1rem;
+    transition: all 500ms ease;
+}
+.nav-item:hover{
+    color:red !important;
+}
+.skill-icons {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.skill-icons img {
+    width: 100%;
+    height: 100%;
     display: block;
     object-fit: contain;
+
 }
-.skills h4{
-    margin-top:30px;
+
+.skills h4 {
     border-bottom: #B60000 solid;
 }
-.resume-container h3{
-    margin-top:20px;
-}   
 
+h5 span {
+    font-style: italic;
+}
+
+.form-label {
+    font-size: 1.2rem;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px !important;
+}
+
+.form-control {
+    color: black !important;
+}
+.contact-container p{
+    color:red !important;
+}
+.about{
+    font-size: 1.3rem;
+}
+.about span{
+    color:red !important;
+    font-style: italic;
+}

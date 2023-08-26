@@ -1,46 +1,43 @@
-
-import {Container, Nav, Navbar} from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import logoImg from './images/Untitled.png';
 import { Link, useLocation } from 'react-router-dom';
-// import './styles/NavBar.css'
 
 
-
-function NavigationBar (){
+function NavigationBar() {
     const currentPage = useLocation().pathname;
     return (
 
-        <Navbar collapseOnSelect expand="lg" className=" border-bottom border-danger">
+        <Navbar collapseOnSelect expand="lg" className=" border-bottom border-danger top-0">
             <Container>
                 <Link to="/">
-      
-                    <div className='imgDiv'>
-                     <img src={logoImg} alt='logo' className='img-fluid' />
+
+                    <div className='logoImg'>
+                        <img src={logoImg} alt='logo' className='img-fluid' />
                     </div>
-                
+
                 </Link>
-                     <h1>Oliver N.</h1>
+                <h1 className='mx-2'>OLIVER N.</h1>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className='navbar-dark' />
                 <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
-                    <Nav className= ''>
+                    <Nav>
 
                         <Link to="/" >
-                           
-                            <Nav.Link className={currentPage === '/' ? 'active' : 'notactive'} href="#link">About</Nav.Link>
+
+                            <Nav.Item className={currentPage === '/' ? 'active' : 'notactive'} >About</Nav.Item>
                         </Link>
 
                         <Link to="/Projects" >
-                            <Nav.Link className={currentPage === '/Projects' ? 'active' : 'notactive'} href="#link">Projects</Nav.Link>
+                            <Nav.Item className={currentPage === '/Projects' ? 'active' : 'notactive'} >Projects</Nav.Item>
                         </Link>
 
                         <Link to="Contact" >
-                            <Nav.Link className={currentPage === '/Contact' ? 'active' : 'notactive'} href="#link">Contact</Nav.Link>
+                            <Nav.Item className={currentPage === '/Contact' ? 'active' : 'notactive'} >Contact</Nav.Item>
                         </Link>
-                        
+
                         <Link to="/Resume">
-                            <Nav.Link className={currentPage === '/Resume' ? 'active' : 'notactive'} href="#link">Resume</Nav.Link>
+                            <Nav.Item className={currentPage === '/Resume' ? 'active' : 'notactive'}>Resume</Nav.Item>
                         </Link>
-                        
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
