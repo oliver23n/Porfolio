@@ -17,7 +17,7 @@ function Resume() {
             <div className="d-flex justify-content-between my-5">
                 <h2>SKILLS</h2>
                 <h5>Download my <span><a href="https://drive.google.com/file/d/19SCca58539Zkxm1dyjwI8orRLpxzK1-4/view?usp=drive_link">Resume.pdf</a></span></h5>
-             </div>
+            </div>
 
             <div className="skills">
                 <Row>
@@ -26,7 +26,7 @@ function Resume() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="d-flex flex-wrap">
+                    <Col className="d-flex  flex-row flex-wrap">
                         <div className="skill-icons">
                             <img src={htmlimg} />
                         </div>
@@ -44,7 +44,7 @@ function Resume() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="d-flex flex-row">
+                    <Col className="d-flex flex-row flex-wrap">
                         <div className="skill-icons">
                             <img src={reactimg} />
                         </div>
@@ -65,7 +65,7 @@ function Resume() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="d-flex flex-row">
+                    <Col className="d-flex flex-row flex-wrap">
                         <div className="skill-icons">
                             <img src={mongoimg} />
                         </div>
@@ -79,7 +79,7 @@ function Resume() {
                         <h4>Other</h4>
                     </Col>
                     <Row >
-                        <Col>
+                        <Col className="d-flex flex-row flex-wrap">
                             <div className="skill-icons" >
                                 <img src={gitimg} />
                             </div>

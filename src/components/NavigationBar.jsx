@@ -35,7 +35,7 @@ function NavigationBar() {
                         </Link>
 
                         <Link to="/Resume">
-                            <Nav.Item className={currentPage === '/Resume' ? 'active' : 'notactive'}>Resume</Nav.Item>
+                             <Nav.Item className={currentPage === '/Resume' ? 'active' : 'notactive'}>Resume</Nav.Item>
                         </Link>
 
                     </Nav>
