@@ -1,8 +1,37 @@
-# React + Vite
+# Personal Portfolio - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![alt badge](https://img.shields.io/badge/licence-MIT-blue)](https://opensource.org/license/mit/)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Portfolio webpage built with REACT.\
+The Navigation has 4 sections (ABOUT, PROJECTS, CONTACT, RESUME) with a corresponding content that shows when the section is selected. 
+ 
+![alt screenshot](./src/components/images/sreenshot1.png)
+---
+
+## Table Of Contents
+                             
+- [Description](#description)
+- [Usage](#usage)
+- [License](#license)
+- [Questions](#questions)
+
+---
+
+
+## Usage
+
+Here's a direct link for the [Portfolio.](https://oliver-n.netlify.app/)
+
+## License
+
+This Project is licenced under MIT license.
+
+---
+
+## Questions
+
+You can find more about my work at my Github [oliver23n](https://github.com/oliver23n).
+
+
