@@ -9,16 +9,16 @@ function NavigationBar() {
 
         <Navbar collapseOnSelect expand="lg" className=" border-bottom border-danger top-0">
             <Container>
-                <Link to="/">
+                <Navbar.Brand as={Link} to="/">
 
                     <div className='logoImg'>
                         <img src={logoImg} alt='logo' className='img-fluid' />
                     </div>
 
-                </Link>
+                </Navbar.Brand>
                 <h1 className='mx-2'>OLIVER N.</h1>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" className='navbar-dark' />
-                <Navbar.Collapse className='justify-content-end' id="basic-navbar-nav">
+                <Navbar.Toggle aria-controls="toggle-this" className='navbar-dark' />
+                <Navbar.Collapse id="toggle-this" className='justify-content-end' >
                     <Nav>
 
                         <Link to="/" >
