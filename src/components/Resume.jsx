@@ -16,7 +16,7 @@ function Resume() {
         <Container className="resume-container content">
             <div className="d-flex justify-content-between my-5">
                 <h2>SKILLS</h2>
-                <h5>Download my <span><a href="https://drive.google.com/file/d/19SCca58539Zkxm1dyjwI8orRLpxzK1-4/view?usp=drive_link">Resume.pdf</a></span></h5>
+                <h5>Download my <span><a href="https://drive.google.com/drive/u/0/folders/1h_DaMPcu-_ZGDCk_OKE4JdyEOhvuSpqV">Resume.pdf</a></span></h5>
             </div>
 
             <div className="skills">
