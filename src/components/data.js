@@ -3,7 +3,7 @@ import img2 from './images/weatherapp.png';
 import img3 from './images/winepairsn.png';
 import img4 from './images/passgenerator.png';
 import img5 from './images/wherenext.png';
-import img6 from './images/blogsite.png';
+import img6 from './images/realestate.png';
 
 export const projects = [
     {   
@@ -48,10 +48,10 @@ export const projects = [
     },
     {   
         id:6,
-        title: "Blog-site",
-        description:"CMS style Blog site, lets the person view all the posts and create a post/edit a post.Must be logged in. Technologies used: NODEJs, Express, JavaScript, HandleBars, BCrypt,MySQL, Bulma",
+        title: "PropertyPulse",
+        description:"Real estate application that allows users to browse real estate listings that are for sale or rent. User will be able to comment and share their thoughts and opinions on the property. There is also a forum for people to discuss all things real estate.Technologies used: MongoDB/Mogoose ODM, Express.js, React, Node.js with GraphQL, Material.",
         image: img6,
-        link: "https://infinite-temple-42269-d5a50674bc55.herokuapp.com/",
-        github: "https://github.com/oliver23n/Blog-site1"
+        link: "https://radiant-bayou-10994-4d4c2b2a5c96.herokuapp.com/",
+        github: "https://github.com/oliver23n/real-estate-app"
     },
 ];

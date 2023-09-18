@@ -1,5 +1,6 @@
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
-import { useState } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 function Contact() {
 
@@ -9,7 +10,7 @@ function Contact() {
     const [nameError, setNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [messageError, setMessageError] = useState(false);
-
+    const form = useRef();
 
     const handleBlur = (field) => {
         if (field === 'fullName') {
@@ -21,6 +22,20 @@ function Contact() {
         }
     };
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_zh8qul9', 'template_foiwn0s', form.current, 'j-AF6y3eOwboSKoy9')
+            .then((result) => {
+                console.log(result.text)
+            }, (error) => {
+                console.log(error.text);
+            });
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
+
 
 
     return (
@@ -28,7 +43,7 @@ function Contact() {
             <h2 className="my-5">CONTACT ME</h2>
             <Row className="justify-content-lg-start">
                 <Col xs lg={8}>
-                    <Form>
+                    <Form ref={form} onSubmit={sendEmail}>
                         <Form.Group className="mb-3" controlId="formName">
                             <Form.Label>Full name:</Form.Label>
                             <Form.Control name="fullName" type="text"
