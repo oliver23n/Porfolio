@@ -41,7 +41,7 @@ export const projects = [
     {   
         id:5,
         title: "TO-DO app",
-        description: "TO-DO is a list management app that helps you stay organized and boost productivity. Easily create and track your tasks, ensuring you stay on top of your daily responsibilities.Users must sign in. Technologies used: NODEJs, MONGODB, GraphQL,BCrypt, Express, REACT,REACT-Bootstrap Css.",
+        description: "TO-DO is a list management app that helps you stay organized and boost productivity. Easily create and track your tasks, ensuring you stay on top of your daily responsibilities.Users must sign in. Technologies used: NODEJs, MongoDB/Mogoose ODM, GraphQL,BCrypt, Express, REACT,REACT-Bootstrap Css.",
         image:img5,
         link: "#",
         github: "https://github.com/oliver23n/TODO"
