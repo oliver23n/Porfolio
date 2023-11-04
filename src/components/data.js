@@ -2,7 +2,7 @@ import img1 from './images/quiz.png';
 import img2 from './images/weatherapp.png';
 import img3 from './images/winepairsn.png';
 import img4 from './images/passgenerator.png';
-import img5 from './images/wherenext.png';
+import img5 from './images/todo.png';
 import img6 from './images/realestate.png';
 
 export const projects = [
@@ -40,11 +40,11 @@ export const projects = [
     },
     {   
         id:5,
-        title: "Where Next",
-        description: "Allows you to create a post that shares the location, photo, description and allows other users to interact by liking and commenting .Users must sign in. Technologies used: NODEJs, MySQL, HandleBars,BCrypt, Express, TailWind, Css.",
+        title: "TO-DO app",
+        description: "TO-DO is a list management app that helps you stay organized and boost productivity. Easily create and track your tasks, ensuring you stay on top of your daily responsibilities.Users must sign in. Technologies used: NODEJs, MONGODB, GraphQL,BCrypt, Express, REACT,REACT-Bootstrap Css.",
         image:img5,
-        link: "https://wherenext-e8da889fad0c.herokuapp.com/login",
-        github: "https://github.com/oliver23n/where-next"
+        link: "#",
+        github: "https://github.com/oliver23n/TODO"
     },
     {   
         id:6,
